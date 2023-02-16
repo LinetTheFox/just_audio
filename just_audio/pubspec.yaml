@@ -14,6 +14,11 @@ dependencies:
       url: https://github.com/LinetTheFox/just_audio.git
       path: just_audio_platform_interface
       ref: visualizer
+  just_audio_web:
+    git:
+      url: https://github.com/LinetTheFox/just_audio.git
+      path: just_audio_web
+      ref: visualizer
   audio_session: ^0.1.11
   rxdart: '>=0.26.0 <0.28.0'
   path: ^1.8.0
@@ -40,3 +45,7 @@ flutter:
         pluginClass: JustAudioPlugin
       ios:
         pluginClass: JustAudioPlugin
+      macos:
+        pluginClass: JustAudioPlugin
+      web:
+        default_package: just_audio_web
